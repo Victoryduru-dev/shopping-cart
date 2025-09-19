@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.montserrat-700 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.montserrat-900 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container {
+    background-image: url('images/bg-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* backdrop-filter: blur; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    width: 500px;
+    padding: 40px 30px;
+    margin: auto;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em 0em;
+}
+
+.card-title {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.carts {
+    border-top: 1px solid #b8b7b7;
+    padding-top: 10px;
+}
+
+.cart-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #b8b7b7;
+    padding: 10px 0px;
+}
+
+.item-img img {
+    width: 70px;
+    height: 60px;
+}
+
+.item-name h3 {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.item-name p {
+    font-size: 11px;
+}
+
+.item-qty {
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.item-qty button {
+    padding: 0.2em;
+    font-weight: 900;
+    background: none;
+    border: none;
+}
+
+.item-qty p#item-qty-value {
+    width: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.item-qty p {
+    font-size: 14px;
+    border: 1px solid #000;
+    padding: 1px 4px;
+}
+
+.item-price {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+dl {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
+dl div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+dl div dt {
+    font-weight: 500;
+}
+
+dl div dd {
+    text-align: right;
+}
+
+dl div.item-total dt, dl div.item-total dd {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+dl div.item-total dd {
+    letter-spacing: 1.5px;
+}
+
+.cart-btn {
+    margin-top: 20px;
+}
+
+.cart-btn button {
+    display: block;
+  width: 100%;
+  padding: 1em;
+  font-weight: 700;
+  font-size: 16px;
+  border: solid #3b7b3b;
+  background-color: #3b7b3b;
+  color: white;
+}
+
+.plus-btn, .minus-btn {
+    cursor: pointer;
+}
