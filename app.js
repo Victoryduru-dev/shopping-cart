@@ -1,5 +1,7 @@
 "use strict";
 
+// Edited by Duru Victory
+
 const cart = document.getElementById("cart");
 const plusBtn = document.getElementById("plus-btn");
 const minusBtn = document.getElementById("minus-btn");
